@@ -1,0 +1,47 @@
+{
+  "name": "SeaTable",
+  "namespace": "Example.SeaTable",
+  "version": "0.1.0",
+  "keywords": [
+    "seatable",
+    "database",
+    "rows",
+    "sql"
+  ],
+  "categories": [
+    "Database",
+    "Productivity"
+  ],
+  "description": "SeaTable connector package with Connect, SQL, Rows, Search, GetRow, UploadAttachment, Link and AutoLink nodes.",
+  "icon": "icon.png",
+  "language": "Go",
+  "platforms": [
+    "linux",
+    "windows",
+    "darwin"
+  ],
+  "author": {
+    "name": "Your Name",
+    "email": "you@example.com"
+  },
+  "scripts": {
+    "linux": {
+      "build": [
+        "go build -o dist/robomotion-seatable"
+      ],
+      "run": "robomotion-seatable"
+    },
+    "windows": {
+      "build": [
+        "go build -o dist/robomotion-seatable.exe"
+      ],
+      "run": "robomotion-seatable.exe"
+    },
+    "darwin": {
+      "build": [
+        "go build -o dist/robomotion-seatable"
+      ],
+      "run": "robomotion-seatable"
+    }
+  }
+}
