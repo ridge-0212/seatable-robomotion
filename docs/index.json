@@ -1,5 +1,5 @@
 {
-  "generated": "2025-11-26T22:52:16+0800",
+  "generated": "2025-11-26T23:30:00+0800",
   "packages": {
     "example.seatable": {
       "author": {
@@ -16,8 +16,8 @@
       "namespace": "Example.SeaTable",
       "path": "",
       "platforms": ["linux", "windows", "darwin"],
-      "version": "0.1.0",
-      "versions": ["0.1.0"]
+      "version": "0.1.1",
+      "versions": ["0.1.1", "0.1.0"]
     }
   }
 }
