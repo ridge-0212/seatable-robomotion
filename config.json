@@ -1,6 +1,6 @@
 {
   "name": "SeaTable",
-  "namespace": "Example.SeaTable",
+  "namespace": "Robomotion.SeaTable",
   "version": "0.1.1",
   "keywords": [
     "seatable",
@@ -21,8 +21,8 @@
     "darwin"
   ],
   "author": {
-    "name": "Your Name",
-    "email": "you@example.com"
+    "name": "Ridge",
+    "email": "ridge0212@hotmail.com"
   },
   "scripts": {
     "linux": {
