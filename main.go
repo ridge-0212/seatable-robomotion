@@ -17,6 +17,11 @@ func main() {
         &v1.SeaTableUploadAttachment{},
         &v1.SeaTableLink{},
         &v1.SeaTableAutoLink{},
+        // New nodes
+        &v1.SeaTableGetMetadata{},
+        &v1.SeaTableListColumns{},
+        &v1.SeaTableListViews{},
+        &v1.SeaTableDownloadFile{},
     )
     runtime.Start()
 }

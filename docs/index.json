@@ -1,5 +1,5 @@
 {
-  "generated": "2025-11-27T22:08:22+0800",
+  "generated": "2025-11-27T22:46:00+0800",
   "packages": {
     "robomotion.seatable": {
       "author": {
@@ -8,16 +8,25 @@
       },
       "categories": null,
       "category": 10,
-      "description": "SeaTable connector package with Connect, SQL, Rows, Search, GetRow, UploadAttachment, Link and AutoLink nodes.",
+      "description": "SeaTable connector package with Connect, SQL, Rows, Search, GetRow, UploadAttachment, Link, AutoLink, GetMetadata, ListColumns, ListViews and DownloadFile nodes.",
       "icon": "icon.png",
-      "keywords": ["seatable", "database", "rows", "sql"],
+      "keywords": [
+        "seatable", 
+        "database", 
+        "rows", 
+        "sql", 
+        "metadata", 
+        "columns", 
+        "views", 
+        "download"
+      ],
       "language": "Go",
       "name": "SeaTable",
       "namespace": "Robomotion.SeaTable",
       "path": "",
       "platforms": ["linux", "windows", "darwin"],
-      "version": "0.2.0",
-      "versions": ["0.2.0"]
+      "version": "0.3.0",
+      "versions": ["0.3.0", "0.2.0"]
     }
   }
 }
