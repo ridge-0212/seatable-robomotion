@@ -1,5 +1,5 @@
 {
-  "generated": "2025-11-28T00:58:51+0800",
+  "generated": "2025-11-28T01:11:48+0800",
   "packages": {
     "robomotion.seatable": {
       "author": {
@@ -26,7 +26,7 @@
       "path": "",
       "platforms": ["linux", "windows", "darwin"],
       "version": "0.3.1",
-      "versions": ["0.3.1", "0.3.0", "0.2.0"]
+      "versions": ["0.3.1"]
     }
   }
 }
