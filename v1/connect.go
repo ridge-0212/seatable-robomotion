@@ -9,7 +9,7 @@ import (
 
 // SeaTableConnect creates a SeaTable client and outputs a Client ID for reuse.
 type SeaTableConnect struct {
-    runtime.Node `spec:"id=SeaTable.Connect,name=Connect,icon=mdiDatabase,color=#00C2E0,inputs=1,outputs=1"`
+    runtime.Node `spec:"id=Robomotion.SeaTable.Connect,name=Connect,icon=mdiDatabase,color=#00C2E0,inputs=1,outputs=1"`
 
     InServer   runtime.InVariable[string] `spec:"title=Server URL,type=string,scope=Message,name=serverUrl,messageScope,customScope,jsScope"`
     InBaseUUID runtime.InVariable[string] `spec:"title=Base UUID,type=string,scope=Message,name=baseUuid,messageScope,customScope,jsScope"`

@@ -12,7 +12,7 @@ import (
 
 // SeaTableLink manages record links between two tables.
 type SeaTableLink struct {
-    runtime.Node `spec:"id=SeaTable.Link,name=Link Records,icon=mdiLinkVariant,color=#00C2E0,inputs=1,outputs=1"`
+    runtime.Node `spec:"id=Robomotion.SeaTable.Link,name=Link Records,icon=mdiLinkVariant,color=#00C2E0,inputs=1,outputs=1"`
 
     InClientID       runtime.InVariable[string] `spec:"title=Client ID,type=string,scope=Message,name=clientId,messageScope,jsScope,customScope"`
     InOperation      runtime.InVariable[string] `spec:"title=Operation (add|update|remove),type=string,scope=Message,name=operation,messageScope,jsScope,customScope"`

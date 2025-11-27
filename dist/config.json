@@ -1,17 +1,14 @@
 {
   "name": "SeaTable",
-  "namespace": "Example.SeaTable",
-  "version": "0.1.1",
+  "namespace": "Robomotion.SeaTable",
+  "version": "0.2.0",
   "keywords": [
     "seatable",
     "database",
     "rows",
     "sql"
   ],
-  "categories": [
-    "Database",
-    "Productivity"
-  ],
+  "category": 10,
   "description": "SeaTable connector package with Connect, SQL, Rows, Search, GetRow, UploadAttachment, Link and AutoLink nodes.",
   "icon": "icon.png",
   "language": "Go",
@@ -21,8 +18,8 @@
     "darwin"
   ],
   "author": {
-    "name": "Your Name",
-    "email": "you@example.com"
+    "name": "Ridge",
+    "email": "ridge0212@hotmail.com"
   },
   "scripts": {
     "linux": {

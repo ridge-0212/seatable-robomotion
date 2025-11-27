@@ -1,17 +1,14 @@
 {
   "name": "SeaTable",
   "namespace": "Robomotion.SeaTable",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "keywords": [
     "seatable",
     "database",
     "rows",
     "sql"
   ],
-  "categories": [
-    "Database",
-    "Productivity"
-  ],
+  "category": 10,
   "description": "SeaTable connector package with Connect, SQL, Rows, Search, GetRow, UploadAttachment, Link and AutoLink nodes.",
   "icon": "icon.png",
   "language": "Go",

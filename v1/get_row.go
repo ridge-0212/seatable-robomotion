@@ -13,7 +13,7 @@ import (
 
 // SeaTableGetRow fetches a single row by ID, optionally constrained by view.
 type SeaTableGetRow struct {
-    runtime.Node `spec:"id=SeaTable.GetRow,name=Get Row,icon=mdiTableRow,color=#00C2E0,inputs=1,outputs=1"`
+    runtime.Node `spec:"id=Robomotion.SeaTable.GetRow,name=Get Row,icon=mdiTableRow,color=#00C2E0,inputs=1,outputs=1"`
 
     InClientID  runtime.InVariable[string] `spec:"title=Client ID,type=string,scope=Message,name=clientId,messageScope,jsScope,customScope"`
     InTableName runtime.InVariable[string] `spec:"title=Table Name,type=string,scope=Message,name=tableName,messageScope,jsScope,customScope"`

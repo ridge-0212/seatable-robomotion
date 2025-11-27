@@ -26,7 +26,7 @@ type uploadLinkResponse struct {
 
 // SeaTableUploadAttachment uploads a file and returns attachment info.
 type SeaTableUploadAttachment struct {
-    runtime.Node `spec:"id=SeaTable.UploadAttachment,name=Upload Attachment,icon=mdiPaperclip,color=#00C2E0,inputs=1,outputs=1"`
+    runtime.Node `spec:"id=Robomotion.SeaTable.UploadAttachment,name=Upload Attachment,icon=mdiPaperclip,color=#00C2E0,inputs=1,outputs=1"`
 
     InClientID runtime.InVariable[string] `spec:"title=Client ID,type=string,scope=Message,name=clientId,messageScope,jsScope,customScope"`
     InFilePath runtime.InVariable[string] `spec:"title=File Path,type=string,scope=Message,name=filePath,messageScope,jsScope,customScope"`

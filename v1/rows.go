@@ -14,7 +14,7 @@ import (
 
 // SeaTableRows provides list / append / update / delete for rows.
 type SeaTableRows struct {
-    runtime.Node `spec:"id=SeaTable.Rows,name=Rows,icon=mdiTable,color=#00C2E0,inputs=1,outputs=1"`
+    runtime.Node `spec:"id=Robomotion.SeaTable.Rows,name=Rows,icon=mdiTable,color=#00C2E0,inputs=1,outputs=1"`
 
     InClientID runtime.InVariable[string] `spec:"title=Client ID,type=string,scope=Message,name=clientId,messageScope,jsScope,customScope"`
     OptAction  string                     `spec:"title=Action,value=list,enum=list|append|update|delete,enumNames=List|Append|Update|Delete,option"`
