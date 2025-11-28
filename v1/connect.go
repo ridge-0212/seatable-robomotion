@@ -14,6 +14,8 @@ type SeaTableConnect struct {
 	InServer   runtime.InVariable[string] `spec:"title=Server URL,type=string,scope=Message,name=serverUrl,messageScope,customScope,jsScope"`
 	InBaseUUID runtime.InVariable[string] `spec:"title=Base UUID,type=string,scope=Message,name=baseUuid,messageScope,customScope,jsScope"`
 
+	OptBaseTokenString runtime.OptVariable[string] `spec:"title=Base Token (Text),type=string,scope=Message,name=baseToken,messageScope,customScope,jsScope"`
+
 	OptBaseToken runtime.Credential `spec:"title=Base Token,scope=Custom,category=4,messageScope,customScope"`
 
 	OutClientID runtime.OutVariable[string] `spec:"title=Client ID,type=string,scope=Message,name=clientId,messageScope"`
@@ -41,20 +43,26 @@ func (n *SeaTableConnect) OnMessage(ctx message.Context) error {
 		return runtime.NewError("ErrInvalidArg", "Base UUID is required")
 	}
 
-	item, err := n.OptBaseToken.Get(ctx)
-	if err != nil {
-		return err
+	token := ""
+	if v, err := n.OptBaseTokenString.Get(ctx); err == nil {
+		token = strings.TrimSpace(v)
 	}
-	if item == nil {
-		return runtime.NewError("ErrInvalidArg", "Base Token is required")
-	}
-	v, ok := item["value"]
-	if !ok {
-		return runtime.NewError("ErrInvalidArg", "Vault item missing 'value'")
-	}
-	token, ok := v.(string)
-	if !ok || strings.TrimSpace(token) == "" {
-		return runtime.NewError("ErrInvalidArg", "Invalid Base Token value")
+	if token == "" {
+		item, err := n.OptBaseToken.Get(ctx)
+		if err != nil {
+			return err
+		}
+		if item == nil {
+			return runtime.NewError("ErrInvalidArg", "Base Token is required")
+		}
+		v, ok := item["value"]
+		if !ok {
+			return runtime.NewError("ErrInvalidArg", "Vault item missing 'value'")
+		}
+		token, ok = v.(string)
+		if !ok || strings.TrimSpace(token) == "" {
+			return runtime.NewError("ErrInvalidArg", "Invalid Base Token value")
+		}
 	}
 
 	cfg := &SeaTableClient{
